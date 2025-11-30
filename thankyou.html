@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Спасибо за оплату — AI Model Course</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src='https://connect.facebook.net/en_US/fbevents.js';
+    s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script');
+    fbq('init', 'YOUR_PIXEL_ID');   // сюда поставишь свой ID пикселя
+    fbq('track', 'PageView');
+    fbq('track', 'Purchase', {value: 97.00, currency: 'USD'});
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- /Meta Pixel -->
+
+  <style>
+    :root {
+      --bg: #020617;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #6366f1;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #111827 0, #020617 45%, #020617 100%);
+      color: var(--text);
+    }
+    .wrap {
+      max-width: 480px;
+      margin: 0 auto;
+      padding: 40px 16px 60px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 14px;
+      color: var(--muted);
+      margin: 6px 0;
+    }
+    .card {
+      margin-top: 18px;
+      border-radius: 18px;
+      border: 1px solid #1f2937;
+      background: #020617;
+      padding: 16px 16px 18px;
+      box-shadow: 0 18px 36px rgba(15,23,42,0.9);
+    }
+    .highlight {
+      font-weight: 600;
+      color: #bbf7d0;
+    }
+    a {
+      color: #a5b4fc;
+      text-decoration: none;
+      font-size: 13px;
+    }
+    .btn {
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding: 10px 20px;
+      margin-top: 18px;
+      border-radius: 999px;
+      border: none;
+      background: linear-gradient(135deg, #6366f1, #8b5cf6);
+      color: #f9fafb;
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+      text-decoration:none;
+    }
+    .small-note {
+      margin-top: 14px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Спасибо за оплату</h1>
+
+    <div class="card">
+      <p>Мы получили твои данные и проверим транзакцию <span class="highlight">USDT TRC20</span>.</p>
+      <p>В течение <strong>до 24 часов</strong> ты получишь письмо с доступом к курсу на указанный email.</p>
+      <p>Если письма нет — проверь «Спам» и «Промо», а затем напиши на почту поддержки.</p>
+    </div>
+
+    <a href="index.html" class="btn">← Вернуться на сайт</a>
+    </div>
+  </div>
+</body>
+</html>
